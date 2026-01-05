@@ -1,0 +1,77 @@
+# =============================================================================
+# Cloud Security Project - .gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# AWS Credentials - NEVER COMMIT THESE!
+# -----------------------------------------------------------------------------
+*.pem
+*.csv
+credentials
+.aws/
+aws_credentials.json
+*_accessKeys.csv
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# -----------------------------------------------------------------------------
+# IDE and Editor
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# -----------------------------------------------------------------------------
+# OS Files
+# -----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------------------------------------------------------
+# Project Specific
+# -----------------------------------------------------------------------------
+# Large data files (we'll keep sample data, ignore large datasets)
+data/raw_cloudtrail/
+data/*.gz
+data/large_*.json
+
+# Trained models (can be large)
+models/*.pkl
+models/*.joblib
+models/checkpoints/
+
+# Local configuration
+config.local.py
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
