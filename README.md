@@ -5,7 +5,7 @@ A cloud security platform that monitors AWS CloudTrail logs in real-time and use
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![AWS](https://img.shields.io/badge/AWS-CloudTrail%20%7C%20Lambda%20%7C%20RDS-orange)
 ![ML](https://img.shields.io/badge/ML-Isolation%20Forest%20%7C%20One--Class%20SVM-green)
-![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+
 
 
 ## Architecture
