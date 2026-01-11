@@ -1,0 +1,22 @@
+Project Phase 2:
+
+The Problem:
+Raw CloudTrail logs have basic fields. ML models need meaningful patterns.
+The Solution:
+Transform raw data into features that capture security-relevant behavior patterns.
+Interview Gold 🎯
+
+"Feature engineering was the most critical part of my pipeline. Raw CloudTrail logs just tell you what happened — my engineered features capture behavioral patterns like 'how many events did this user generate in the last hour?' or 'is this IP address appearing for the first time?' These patterns are what the anomaly detection model actually learns from."
+
+
+Understanding ETL
+E - Extract: Read raw CloudTrail JSON from source
+T - Transform: Parse, clean, engineer features
+L - Load: Save processed data to destination (CSV/S3)
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   EXTRACT   │────▶│  TRANSFORM  │────▶│    LOAD     │
+│             │     │             │     │             │
+│ Raw JSON    │     │ Parse       │     │ CSV file    │
+│ from S3/    │     │ Clean       │     │ to S3/      │
+│ local       │     │ Engineer    │     │ local       │
+└─────────────┘     └─────────────┘     └─────────────┘
