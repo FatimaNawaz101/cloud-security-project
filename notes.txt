@@ -20,3 +20,20 @@ L - Load: Save processed data to destination (CSV/S3)
 │ from S3/    │     │ Clean       │     │ to S3/      │
 │ local       │     │ Engineer    │     │ local       │
 └─────────────┘     └─────────────┘     └─────────────┘
+
+
+Why Isolation Forest?
+The Problem:
+Security attacks are rare and constantly evolving. We can't train on "known attacks" because new attacks appear daily.
+The Solution:
+Isolation Forest learns what "normal" looks like and flags anything that doesn't fit — without needing labeled attack data.
+How It Works (Simple Explanation):
+Imagine you're playing "20 questions" to identify a specific data point:
+
+Normal points are clustered together → need MANY questions to isolate
+Anomalies are far from others → need FEW questions to isolate
+
+The algorithm builds random decision trees and measures how quickly each point gets isolated. Points that isolate quickly = anomalies.
+Interview Gold 🎯
+
+"I chose Isolation Forest because it's an unsupervised algorithm designed specifically for anomaly detection. Unlike supervised methods that need labeled attack data, Isolation Forest learns the structure of normal behavior and flags deviations. It works by randomly partitioning data — anomalies are isolated in fewer partitions because they're different from the majority. This is perfect for security because new attack patterns emerge constantly, and we can't rely on having labeled examples of every threat type."

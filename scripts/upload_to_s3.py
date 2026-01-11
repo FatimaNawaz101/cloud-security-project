@@ -25,7 +25,15 @@ CONFIG = {
         {
             "local_path": "../data/processed/feature_summary.json",
             "s3_key": "processed/feature_summary.json"
-        }
+        },
+        {
+        "local_path": "../data/results/anomaly_predictions.csv",
+        "s3_key": "results/anomaly_predictions.csv"
+    },
+    {
+        "local_path": "../data/results/detection_summary.json",
+        "s3_key": "results/detection_summary.json"
+    }
     ]
 }
 
